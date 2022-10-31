@@ -10,7 +10,9 @@ public class Cliente
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get;set; }
     
-    public string? Nome { get;set; }
+    public string Nome { get;set; } = null!;
     public string? Telefone { get;set; }
     public string? CPF { get;set; }
+    public string Email { get;set; } = null!;
+    public string Senha { get;set; } = null!;
 }
