@@ -6,4 +6,6 @@ export DATABASE_URL_MINIMAL_API='server=localhost;port=3306;database=minimal;uid
 
 dotnet ef database update
 
+dotnet run
+
 ```
