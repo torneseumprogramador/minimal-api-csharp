@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//export DATABASE_URL_MINIMAL_API='server=localhost;port=3306;database=minimal;uid=root;password=root;persistsecurityinfo=True'
 string? conexao = Environment.GetEnvironmentVariable("DATABASE_URL_MINIMAL_API");
 
 builder.Services.AddDbContext<DbContexto>(options =>
