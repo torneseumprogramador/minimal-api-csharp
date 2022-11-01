@@ -15,4 +15,13 @@ public class Cliente
     public string? CPF { get;set; }
     public string Email { get;set; } = null!;
     public string Senha { get;set; } = null!;
+    
+    [NotMapped]
+    public string Permissao 
+    {
+        get
+        {
+            return "administrador";
+        }
+    }
 }
